@@ -115,3 +115,123 @@ window.addEventListener('scroll', () => {
         document.body.style.overflowY = 'auto';
     }, 150);
 }, { passive: true });
+
+/// Certificate Image Modal Functions
+function openCertificateImage(imageUrl) {
+    const modal = document.createElement('div');
+    modal.className = 'cert-image-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCertificateImage()">&times;</span>
+            <img src="${imageUrl}" alt="Certificate Full View">
+        </div>
+    `;
+    document.body.appendChild(modal);
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertificateImage() {
+    const modal = document.querySelector('.cert-image-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.remove();
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close image modal with Escape key or click outside
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeCertificateImage();
+        closeCertificate();
+    }
+});
+
+document.addEventListener('click', function(event) {
+    const imageModal = document.querySelector('.cert-image-modal');
+    if (imageModal && event.target === imageModal) {
+        closeCertificateImage();
+    }
+    
+    const certModal = document.getElementById('certificateModal');
+    if (certModal && event.target === certModal) {
+        closeCertificate();
+    }
+});
+
+// Old certificate preview functions (for text-based previews)
+function openCertificate(type) {
+    const modal = document.getElementById('certificateModal');
+    const certificateView = document.getElementById('certificateView');
+    
+    let certificateHTML = '';
+    
+    if (type === 'ctiga') {
+        certificateHTML = `
+            <div class="certificate-preview">
+                <div class="certificate-header">
+                    <h3>RED TEAM LEADERS</h3>
+                    <div class="certificate-issuer">Certified Threat Intelligence & Governance Analyst</div>
+                    <div style="color: #aaa; font-size: 0.9rem; margin-top: 0.5rem;">Professional Certification</div>
+                </div>
+                
+                <div class="certificate-body">
+                    <div style="color: #aaa; margin: 1rem 0;">This is to acknowledge that</div>
+                    
+                    <div class="certificate-name">HUSNAIN</div>
+                    
+                    <div class="certificate-details">
+                        successfully completed all the requirements and passed the examination for
+                    </div>
+                    
+                    <div class="certificate-title">Certified Threat Intelligence & Governance Analyst (CTIGA)</div>
+                </div>
+                
+                <div class="certificate-footer">
+                    <div class="certificate-date">Issued: February 6, 2026</div>
+                    <div class="certificate-id">Certificate ID: CTIGA-2026-${Math.random().toString(36).substr(2, 9).toUpperCase()}</div>
+                    <div style="margin-top: 1rem; color: #888; font-size: 0.8rem;">
+                        Verify at: <a href="https://redteamleaders.com/certificate-verification" target="_blank" style="color: #00D9FF;">redteamleaders.com/certificate-verification</a>
+                    </div>
+                </div>
+            </div>
+        `;
+    } else if (type === 'cisco') {
+        certificateHTML = `
+            <div class="certificate-preview">
+                <div class="certificate-header">
+                    <h3>CISCO NETWORKING ACADEMY</h3>
+                    <div class="certificate-issuer">Introduction to Cybersecurity</div>
+                </div>
+                
+                <div class="certificate-body">
+                    <div style="color: #aaa; margin: 1rem 0;">This certificate is awarded to</div>
+                    
+                    <div class="certificate-name">HUSNAIN</div>
+                    
+                    <div class="certificate-details">
+                        for successful completion of the Introduction to Cybersecurity course
+                    </div>
+                </div>
+                
+                <div class="certificate-footer">
+                    <div class="certificate-date">Issued: 2025</div>
+                    <div style="margin-top: 1rem; color: #888; font-size: 0.8rem;">
+                        Verify at: <a href="https://skillsforall.com/certification" target="_blank" style="color: #00D9FF;">skillsforall.com/certification</a>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    certificateView.innerHTML = certificateHTML;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertificate() {
+    const modal = document.getElementById('certificateModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
