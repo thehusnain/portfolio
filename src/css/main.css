@@ -1827,3 +1827,208 @@ footer .signature {
         height: 150px;
     }
 }
+
+/* Mobile-specific fixes */
+@media (max-width: 480px) {
+    /* Fix hero section */
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Fix terminal window on mobile */
+    .terminal-window {
+        max-width: 95% !important;
+        padding: 1.5rem !important;
+        margin: 1rem auto !important;
+        border-radius: 10px !important;
+    }
+    
+    .terminal-text {
+        font-size: 0.85rem !important;
+        line-height: 1.5;
+    }
+    
+    /* Fix badge container */
+    .badge-container {
+        max-width: 95% !important;
+        padding: 0.8rem !important;
+        margin: 1rem auto !important;
+    }
+    
+    .badge-container iframe {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+        height: 140px !important;
+        transform: scale(0.85);
+        transform-origin: center;
+    }
+    
+    /* Fix navigation */
+    nav {
+        padding: 0.8rem 1rem !important;
+    }
+    
+    .logo {
+        font-size: 1rem;
+    }
+    
+    /* Fix sections */
+    section {
+        padding: 3rem 1rem !important;
+    }
+    
+    /* Fix buttons */
+    .btn {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Fix timeline */
+    .timeline-item {
+        padding-left: 1.5rem !important;
+        padding-right: 0 !important;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Fix contact form */
+    .contact-form {
+        padding: 1.5rem !important;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem !important;
+    }
+    
+    /* Fix project cards */
+    .project-card {
+        padding: 1.5rem !important;
+    }
+    
+    /* Fix skills section */
+    .skill-category {
+        padding: 1.5rem !important;
+    }
+    
+    /* Fix about content */
+    .about-content {
+        gap: 1.5rem !important;
+    }
+    
+    /* Fix ASCII art on boot screen */
+    .ascii-art {
+        font-size: 0.4rem !important;
+        line-height: 1;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .boot-content {
+        padding: 0.5rem !important;
+    }
+    
+    .boot-terminal p {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .terminal-window {
+        padding: 1rem !important;
+    }
+    
+    .terminal-text {
+        font-size: 0.8rem !important;
+    }
+    
+    .badge-container iframe {
+        height: 120px !important;
+        transform: scale(0.8);
+    }
+}
+
+/* Fix horizontal scrolling issues */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+/* Fix images and iframes */
+img, iframe, video, embed {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix text overflow */
+.terminal-text, .code-content, .blog-body, .about-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Improve touch targets for mobile */
+.nav-links a, .btn, .cert-link, .project-link, .gallery-preview, .gallery-verify {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix flexbox issues on mobile */
+.cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+}
+
+.cta-sign {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+    text-align: center;
+}
+
+/* Fix grid layouts */
+@media (max-width: 768px) {
+    .about-stats, .certifications-grid, .projects-grid, .skills-grid, .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .about-content {
+        display: flex !important;
+        flex-direction: column;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
