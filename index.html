@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husnain | Portfolio</title>
+    <meta name="author" content="Husnain">  
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Terminal Boot Screen - signed: husnain -->
+    <div id="bootScreen" class="boot-screen">
+        <div class="boot-content">
+            <div class="boot-header">
+                <pre class="ascii-art">
+                         
+               \ \      / /__| | ___ ___  _ __ ___   ___ 
+                \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+                 \ V  V /  __/ | (_| (_) | | | | | |  __/
+                  \_/\_/ \___|_|\___\___/|_| |_| |_|\___|
+
+
+                                                                           </pre>
+            </div>
+            <div class="boot-terminal">
+                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing security system...</span></p>
+                <p><span class="boot-prompt">[BOOT]</span> <span class="boot-text">Loading red team modules</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Mounting security tools</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[LOAD]</span> <span class="boot-text">Starting penetration testing services</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading portfolio.sh</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Initializing cybersecurity interface</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[DONE]</span> <span class="boot-text">System ready for ethical hacking</span> <span class="boot-status boot-ready">[READY]</span></p>
+            </div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar"></div>
+            </div>
+            <p class="boot-footer">Portfolio loading... <span class="boot-sign">— husnain</span></p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">&gt;_redteam.sh <span class="logo-sign">· husnain</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">TryHackMe Stats</a>
+                <a href="#experience" onclick="closeMenu()">Experience</a>
+                <a href="#education" onclick="closeMenu()">Education</a>
+                <a href="#certifications" onclick="closeMenu()">Certifications</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="tag">cybersecurity enthusiast · aspiring red teamer</div>
+        <h1>HUSNAIN </h1>
+        <p class="subtitle">Passionate about offensive security — learning & practicing ethically</p>
+
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-text">
+                    <p class="output">Cybersecurity focus areas:</p>
+                    <p class="output"><span class="prompt">&gt;</span> Web Application Penetration Testing</p>
+                    <p class="output"><span class="prompt">&gt;</span> Red Team Methodologies</p>  
+                    <p class="output"><span class="prompt">&gt;</span> Cryptography & Network Security</p>
+                    <p class="output"><span class="prompt">&gt;</span> CTF Challenges & Vulnerable Labs</p>
+                    
+                    <p class="output">&nbsp;</p> <!-- Add spacing -->
+                    
+                    <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+                    <p class="output">GitHub: <a href="https://github.com/thehusnain" target="_blank" class="link">github.com/thehusnain</a> <span class="muted">· by Husnain</span></p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="output">_</span><span style="animation: blink 1s infinite;">|</span></p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <span class="cta-sign">signed: husnain</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p class="about-intro">
+    Hi — I'm <span class="highlight">Husnain</span>, a passionate cybersecurity enthusiast and BS Computer Science student
+    from <strong>Haripur, Pakistan</strong>. I started my cybersecurity journey 4 months ago and have been dedicating
+    my time to learning, practicing, and improving every single day.
+</p>
+
+<p>
+    Although I'm still in the learning phase, I'm proud to be ranked in the <strong>top 5%</strong> on TryHackMe.
+    I actively participate in CTF challenges, build my own vulnerable labs for legal practice, and focus mainly on
+    <strong>web application penetration testing</strong> and <strong>cryptography fundamentals</strong>.
+</p>
+
+<p>
+    I use <strong>Kali Linux</strong> as my primary OS for security testing and exploration, and I strongly believe
+    in ethical hacking, responsible learning, and continuous growth. My tech stack includes Burp Suite, Wireshark,
+    GitHub, Metasploit, Gobuster, and various cryptography tools.
+</p>
+
+                    <div class="about-stats">
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot dot-red"></div>
+                            <div class="code-dot dot-yellow"></div>
+                            <div class="code-dot dot-green"></div>
+                            <span class="code-title">about.js</span>
+                        </div>
+                        <div class="code-content">
+<pre><code><span class="code-keyword">const</span> <span class="code-variable">securityEnthusiast</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Husnain"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Cybersecurity Learner & Aspiring Red Teamer"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Haripur, Pakistan"</span>,
+  <span class="code-property">education</span>: <span class="code-string">"BS Computer Science"</span>,
+  <span class="code-property">experience</span>: <span class="code-string">"4 months in cybersecurity"</span>,
+  <span class="code-property">achievements</span>: [
+    <span class="code-string">"Top 5% on TryHackMe"</span>,
+    <span class="code-string">"Cisco Cybersecurity Certificate"</span>,
+    <span class="code-string">"Active CTF Participant"</span>
+  ],
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"Web Penetration Testing"</span>,
+    <span class="code-string">"Cryptography"</span>,
+    <span class="code-string">"Network Security"</span>,
+    <span class="code-string">"Vulnerability Assessment"</span>,
+    <span class="code-string">"Kali Linux"</span>
+  ],
+  <span class="code-property">tools</span>: [
+    <span class="code-string">"Burp Suite"</span>,
+    <span class="code-string">"Wireshark"</span>,
+    <span class="code-string">"Metasploit"</span>,
+    <span class="code-string">"Nmap"</span>,
+    <span class="code-string">"SQLMap"</span>,
+    <span class="code-string">"Gobuster"</span>
+  ],
+  <span class="code-property">funFact</span>: <span class="code-string">"I build vulnerable labs and solve CTFs to test new techniques ethically."</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>TryHackMe Statistics</h2>
+        <div class="skills-grid">
+            <div class="skill-category fade-in">
+                <h3>Rank & Achievements</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Global Ranking</span>
+                        <span>Top 5%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Rooms Completed</span>
+                        <span>45+</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Learning Paths</span>
+                        <span>3</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.1s;">
+                <h3>Technical Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Web Security</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Network Security</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Cryptography</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="65%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.2s;">
+                <h3>Tool Proficiency</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Burp Suite</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Wireshark</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Kali Linux Tools</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fixed TryHackMe Badge -->
+        <div class="thm-badge fade-in">
+            <h3>TryHackMe Profile</h3>
+            <div class="badge-container">
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6068647" title="TryHackMe Profile Badge"></iframe>
+            </div>
+            <p style="margin-top: 1rem; color: #aaa; font-size: 0.9rem;">
+                Username: <strong style="color: #00FF8C;">thephantomdelux</strong> 
+                • Rank: <strong style="color: #00D9FF;">Top 5%</strong>
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Self-Learning & Practice</h3>
+                    <div class="timeline-date">2025 - Present</div>
+                    <p class="timeline-description">
+                        Intensive self-study in cybersecurity through TryHackMe, CTF challenges, and vulnerable lab environments.
+                        Building practical skills in web penetration testing, network security, and cryptography.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Vulnerable Lab Creation</h3>
+                    <div class="timeline-date">2025 - Present</div>
+                    <p class="timeline-description">
+                        Creating and maintaining personal vulnerable labs for legal practice and testing of security techniques.
+                        Implementing various vulnerabilities to understand exploitation and remediation methods.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>CTF Participation</h3>
+                    <div class="timeline-date">2025 - Present</div>
+                    <p class="timeline-description">
+                        Regular participation in Capture The Flag competitions to enhance practical skills.
+                        Solving challenges in web exploitation, cryptography, reverse engineering, and forensics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>BS Computer Science</h3>
+                    <div class="timeline-date">2023 - Present</div>
+                    <p class="timeline-description">
+                        Pursuing Bachelor's degree in Computer Science with focus on cybersecurity fundamentals,
+                        networking, operating systems, and secure software development principles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Cybersecurity Self-Learning</h3>
+                    <div class="timeline-date">2025 - Present</div>
+                    <p class="timeline-description">
+                        Dedicated self-study through online platforms including TryHackMe, Cisco Networking Academy,
+                        and various cybersecurity resources. Focus on practical, hands-on learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">🔐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Cybersecurity</div>
+                        <div class="cert-issuer">Cisco</div>
+                    </div>
+                </div>
+                <h3>Introduction to Cybersecurity</h3>
+                <p class="cert-description">
+                    Completed comprehensive introduction to cybersecurity covering threats, vulnerabilities,
+                    cryptography basics, and network security fundamentals.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.1s;">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Achievement</div>
+                        <div class="cert-issuer">TryHackMe</div>
+                    </div>
+                </div>
+                <h3>Top 5% Global Ranking</h3>
+                <p class="cert-description">
+                    Achieved top 5% ranking among TryHackMe's global community through consistent learning
+                    and completion of security challenges.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                    <span class="cert-badge-text">🏅 Achievement</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.2s;">
+                <div class="cert-icon">🌐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Networking</div>
+                        <div class="cert-issuer">Cisco</div>
+                    </div>
+                </div>
+                <h3>Networking Basics</h3>
+                <p class="cert-description">
+                    Fundamental networking knowledge including TCP/IP, network protocols,
+                    routing, switching, and network architecture essentials.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3>🛡️ WebShield Scanner</h3>
+                <p>A comprehensive web application security scanner that tests websites for vulnerabilities using Nmap, SQLMap, SSLScan, and Nikto. Features automated report generation with AI analysis.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Nmap</span>
+                    <span class="tech-tag">SQLMap</span>
+                    <span class="tech-tag">SSLScan</span>
+                    <span class="tech-tag">Nikto</span>
+                    <span class="tech-tag">AI Reporting</span>
+                </div>
+                <a href="https://webshield.tech" class="project-link">Live Demo &rarr;</a>
+                <a href="https://github.com/webshield-tech" class="project-link">Source Code &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <h3>🧪 Vulnerable Practice Lab</h3>
+                <p>Personal vulnerable lab environment for practicing penetration testing techniques legally. Includes intentionally vulnerable web applications and network services for skill development.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Kali Linux</span>
+                    <span class="tech-tag">Web Exploitation</span>
+                    <span class="tech-tag">Network Security</span>
+                </div>
+                <a href="#" class="project-link">Explore Lab &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                <h3>🔐 Cryptography Toolkit</h3>
+                <p>Collection of cryptography tools and scripts for encryption, decryption, and cryptographic analysis. Includes implementations of various ciphers and cryptographic protocols.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Cryptography</span>
+                    <span class="tech-tag">Encryption</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                <a href="#contact" class="project-link">Get Access &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Learning Journey</h2>
+        <div class="blog-grid">
+            <div class="blog-card fade-in">
+                <div class="blog-header">
+                    <div class="blog-date">September 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>My First 4 Months in Cybersecurity <span class="post-sign">— husnain</span></h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Beginner</span>
+                        <span class="blog-tag">Learning</span>
+                        <span class="blog-tag">Journey</span>
+                    </div>
+                    <p>Reflections on my initial cybersecurity journey, from basic concepts to achieving top 5% on TryHackMe. Challenges faced and lessons learned...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.1s;">
+                <div class="blog-header">
+                    <div class="blog-date">October 10, 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Web Penetration Testing Fundamentals</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Web Security</span>
+                        <span class="blog-tag">Penetration Testing</span>
+                        <span class="blog-tag">OWASP</span>
+                    </div>
+                    <p>Understanding common web vulnerabilities and how to ethically test for them. Covering SQL injection, XSS, CSRF, and security headers...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.2s;">
+                <div class="blog-header">
+                    <div class="blog-date">October 5, 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Building a Home Security Lab</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Lab Setup</span>
+                        <span class="blog-tag">Practice</span>
+                        <span class="blog-tag">Legal Testing</span>
+                    </div>
+                    <p>Step-by-step guide to creating your own vulnerable lab environment for legal security practice. Tools, configurations, and safety considerations...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="contact">
+    <h2>Get In Touch</h2>
+
+    <div class="contact-container">
+        <div class="contact-grid">
+
+            <div class="contact-item fade-in">
+                <div class="contact-icon email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <a href="mailto:huxnain.cs@gmail.com">huxnain.cs@gmail.com</a>
+            </div>
+
+            <div class="contact-item fade-in" style="animation-delay: 0.1s;">
+                <div class="contact-icon github">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/thehusnain" target="_blank">
+                    github.com/thehusnain
+                </a>
+            </div>
+
+            <div class="contact-item fade-in" style="animation-delay: 0.2s;">
+                <div class="contact-icon thm">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+                <h3>TryHackMe</h3>
+                <a href="https://tryhackme.com/p/thephantomdelux" target="_blank">
+                    tryhackme.com/p/thephantomdelux
+                </a>
+            </div>
+
+            <div class="contact-item fade-in" style="animation-delay: 0.3s;">
+                <div class="contact-icon linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/husnain-fiaz-7a4761369" target="_blank">
+                    linkedin.com/in/husnain-fiaz-7a4761369
+                </a>
+            </div>
+
+            <div class="contact-item fade-in" style="animation-delay: 0.4s;">
+                <div class="contact-icon discord">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <h3>Discord</h3>
+                <a href="#">
+                    thephantomdelux
+                </a>
+            </div>
+
+            <div class="contact-item fade-in" style="animation-delay: 0.5s;">
+                <div class="contact-icon location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3>Location</h3>
+                <span>Haripur, Pakistan</span>
+            </div>
+
+        </div>
+    </div>
+
+
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label>$ name --input</label>
+                        <input type="text" placeholder="your name" required>
+                        <small class="field-sign">Signed by husnain</small>
+                    </div>
+                    <div class="form-group">
+                        <label>$ email --input</label>
+                        <input type="email" placeholder="your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>$ message --input</label>
+                        <textarea placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
+        <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by <strong>husnain</strong></p>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
