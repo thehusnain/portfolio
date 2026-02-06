@@ -668,27 +668,26 @@
     </div>
 
 
-            <div class="contact-form fade-in">
-                <form>
-                    <div class="form-group">
-                        <label>$ name --input</label>
-                        <input type="text" placeholder="your name" required>
-                        <small class="field-sign">Signed by husnain</small>
-                    </div>
-                    <div class="form-group">
-                        <label>$ email --input</label>
-                        <input type="email" placeholder="your email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label>$ message --input</label>
-                        <textarea placeholder="Your message here..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+     <div class="contact-form fade-in">
+    <form action="https://formspree.io/f/xojnqqle" method="POST">
+        <div class="form-group">
+            <label>$ name --input</label>
+            <input type="text" name="name" placeholder="your name" required>
+            <small class="field-sign">Signed by husnain</small>
         </div>
-    </section>
-
+        <div class="form-group">
+            <label>$ email --input</label>
+            <input type="email" name="email" placeholder="your email address" required>
+        </div>
+        <div class="form-group">
+            <label>$ message --input</label>
+            <textarea name="message" placeholder="Your message here..." required></textarea>
+        </div>
+        <!-- Formspree honeypot to prevent spam -->
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</div>
     <footer>
         <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
         <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by <strong>husnain</strong></p>
