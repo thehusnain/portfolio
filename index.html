@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Husnain | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/src/assets/favicon.jpeg">
-    <meta name="author" content="Husnain">  
+    <meta name="author" content="Husnain">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,108 +16,109 @@
                 max-width: 100vw;
                 box-sizing: border-box;
             }
-            
+
             body {
                 font-size: 14px;
                 overflow-x: hidden;
                 width: 100%;
                 position: relative;
             }
-            
+
             .hero h1 {
                 font-size: 2.2rem !important;
                 line-height: 1.2;
                 word-break: break-word;
             }
-            
+
             .terminal-window {
                 width: 95% !important;
                 max-width: 95% !important;
                 margin: 1rem auto !important;
                 padding: 1.2rem !important;
             }
-            
+
             .terminal-text {
                 font-size: 0.85rem !important;
             }
-            
+
             .terminal-text p {
                 margin-bottom: 0.6rem !important;
                 word-break: break-word;
             }
-            
+
             .badge-container iframe {
                 width: 100% !important;
                 margin: 0 !important;
                 transform: none !important;
                 height: 180px !important;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: 1fr !important;
                 gap: 1rem !important;
             }
-            
+
             .cert-image-preview .cert-thumb {
                 height: 140px !important;
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr !important;
             }
-            
+
             section {
                 padding: 3rem 1rem !important;
             }
-            
+
             h2 {
                 font-size: 1.8rem !important;
             }
-            
+
             .subtitle {
                 font-size: 1rem !important;
                 padding: 0 0.5rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 1.8rem !important;
             }
-            
+
             .terminal-window {
                 padding: 1rem !important;
             }
-            
+
             .terminal-text {
                 font-size: 0.8rem !important;
             }
-            
+
             .btn {
                 padding: 0.8rem 1.5rem !important;
                 font-size: 0.9rem !important;
                 width: 100%;
                 text-align: center;
             }
-            
+
             .cta-buttons {
                 width: 100%;
                 padding: 0 0.5rem;
             }
-            
+
             .badge-container iframe {
                 height: 160px !important;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Terminal Boot Screen - signed: husnain -->
     <div id="bootScreen" class="boot-screen">
         <div class="boot-content">
             <div class="boot-header">
                 <pre class="ascii-art">
-                         
+
                \ \      / /__| | ___ ___  _ __ ___   ___ 
                 \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \
                  \ V  V /  __/ | (_| (_) | | | | | |  __/
@@ -126,13 +128,20 @@
                                                                            </pre>
             </div>
             <div class="boot-terminal">
-                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing security system...</span></p>
-                <p><span class="boot-prompt">[BOOT]</span> <span class="boot-text">Loading red team modules</span> <span class="boot-status boot-ok">[OK]</span></p>
-                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Mounting security tools</span> <span class="boot-status boot-ok">[OK]</span></p>
-                <p><span class="boot-prompt">[LOAD]</span> <span class="boot-text">Starting penetration testing services</span> <span class="boot-status boot-ok">[OK]</span></p>
-                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading portfolio.sh</span> <span class="boot-status boot-ok">[OK]</span></p>
-                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Initializing cybersecurity interface</span> <span class="boot-status boot-ok">[OK]</span></p>
-                <p><span class="boot-prompt">[DONE]</span> <span class="boot-text">System ready for ethical hacking</span> <span class="boot-status boot-ready">[READY]</span></p>
+                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing security
+                        system...</span></p>
+                <p><span class="boot-prompt">[BOOT]</span> <span class="boot-text">Loading red team modules</span> <span
+                        class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Mounting security tools</span> <span
+                        class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[LOAD]</span> <span class="boot-text">Starting penetration testing
+                        services</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading portfolio.sh</span> <span
+                        class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Initializing cybersecurity
+                        interface</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[DONE]</span> <span class="boot-text">System ready for ethical
+                        hacking</span> <span class="boot-status boot-ready">[READY]</span></p>
             </div>
             <div class="boot-progress">
                 <div class="boot-progress-bar"></div>
@@ -141,7 +150,7 @@
         </div>
     </div>
 
-    <nav>
+    <nav class="glass-nav">
         <div class="nav-content">
             <div class="logo">&gt;_redteam.sh <span class="logo-sign">· husnain</span></div>
             <div class="hamburger" onclick="toggleMenu()">
@@ -161,37 +170,60 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="tag">cybersecurity enthusiast · aspiring red teamer</div>
-        <h1>HUSNAIN</h1>
-        <p class="subtitle">Passionate about offensive security — learning & practicing ethically</p>
+    <section class="hero" id="home">
+        <canvas id="cyberBackground"></canvas>
+        <div class="hero-content-wrapper">
+            <div class="hero-text-section">
+                <div class="tag glowing-tag">cybersecurity enthusiast · aspiring red teamer</div>
+                <h1 class="glitch" data-text="HUSNAIN">HUSNAIN</h1>
+                <p class="subtitle">Passionate about offensive security — learning & practicing ethically</p>
 
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="terminal-dot dot-red"></div>
-                <div class="terminal-dot dot-yellow"></div>
-                <div class="terminal-dot dot-green"></div>
-            </div>
-            <div class="terminal-text">
-                <p class="output">Cybersecurity focus areas:</p>
-                <p class="output"><span class="prompt">&gt;</span> Web Application Penetration Testing</p>
-                <p class="output"><span class="prompt">&gt;</span> Red Team Methodologies</p>  
-                <p class="output"><span class="prompt">&gt;</span> Cryptography & Network Security</p>
-                <p class="output"><span class="prompt">&gt;</span> CTF Challenges & Vulnerable Labs</p>
-                
-                <p class="output">&nbsp;</p>
-                
-                <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
-                <p class="output">GitHub: <a href="https://github.com/thehusnain" target="_blank" class="link">github.com/thehusnain</a> <span class="muted">· by Husnain</span></p>
-                <br>
-                <p><span class="prompt">$</span> <span class="output">_</span><span style="animation: blink 1s infinite;">|</span></p>
-            </div>
-        </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dot dot-red"></div>
+                        <div class="terminal-dot dot-yellow"></div>
+                        <div class="terminal-dot dot-green"></div>
+                    </div>
+                    <div class="terminal-text">
+                        <p class="output">Cybersecurity focus areas:</p>
+                        <p class="output"><span class="prompt">&gt;</span> Web Application Penetration Testing</p>
+                        <p class="output"><span class="prompt">&gt;</span> Red Team Methodologies</p>
+                        <p class="output"><span class="prompt">&gt;</span> Cryptography & Network Security</p>
+                        <p class="output"><span class="prompt">&gt;</span> CTF Challenges & Vulnerable Labs</p>
 
-        <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            <span class="cta-sign">signed: husnain</span>
+                        <p class="output">&nbsp;</p>
+
+                        <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+                        <p class="output">GitHub: <a href="https://github.com/thehusnain" target="_blank"
+                                class="link">github.com/thehusnain</a> <span class="muted">· by Husnain</span></p>
+                        <br>
+                        <p><span class="prompt">$</span> <span class="output">_</span><span
+                                style="animation: blink 1s infinite;">|</span></p>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary cyber-btn">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary cyber-btn">Get In Touch</a>
+                    <span class="cta-sign">signed: husnain</span>
+                </div>
+            </div>
+            <div class="hero-profile-section">
+                <div class="profile-image-container">
+                    <div class="cyber-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                    <img src="src/assets/profile.png" alt="Husnain - Cybersecurity Enthusiast" class="profile-image"
+                        id="profileImg"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Husnain&background=121212&color=00FF8C&size=200'">
+                </div>
+                <div class="profile-status">
+                    <span class="status-indicator"></span>
+                    <span class="status-text">System Online</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -201,22 +233,29 @@
             <div class="about-content fade-in">
                 <div class="about-text">
                     <p class="about-intro">
-    Hi — I'm <span class="highlight">Husnain</span>, a passionate cybersecurity enthusiast and BS Computer Science student
-    from <strong>Haripur, Pakistan</strong>. I started my cybersecurity journey 4 months ago and have been dedicating
-    my time to learning, practicing, and improving every single day.
-</p>
+                        Hi — I'm <span class="highlight">Husnain</span>, a passionate cybersecurity enthusiast and BS
+                        Computer Science student
+                        from <strong>Haripur, Pakistan</strong>. I started my cybersecurity journey 4 months ago and
+                        have been dedicating
+                        my time to learning, practicing, and improving every single day.
+                    </p>
 
-<p>
-    Although I'm still in the learning phase, I'm proud to be ranked in the <strong>top 2%</strong> on TryHackMe.
-    I actively participate in CTF challenges, build my own vulnerable labs for legal practice, and focus mainly on
-    <strong>web application penetration testing</strong> and <strong>cryptography fundamentals</strong>.
-</p>
+                    <p>
+                        Although I'm still in the learning phase, I'm proud to be ranked in the <strong>top 2%</strong>
+                        on TryHackMe.
+                        I actively participate in CTF challenges, build my own vulnerable labs for legal practice, and
+                        focus mainly on
+                        <strong>web application penetration testing</strong> and <strong>cryptography
+                            fundamentals</strong>.
+                    </p>
 
-<p>
-    I use <strong>Kali Linux</strong> as my primary OS for security testing and exploration, and I strongly believe
-    in ethical hacking, responsible learning, and continuous growth. My tech stack includes Burp Suite, Wireshark,
-    GitHub, Metasploit, Gobuster, and various cryptography tools.
-</p>
+                    <p>
+                        I use <strong>Kali Linux</strong> as my primary OS for security testing and exploration, and I
+                        strongly believe
+                        in ethical hacking, responsible learning, and continuous growth. My tech stack includes Burp
+                        Suite, Wireshark,
+                        GitHub, Metasploit, Gobuster, and various cryptography tools.
+                    </p>
 
                     <div class="about-stats">
                     </div>
@@ -230,7 +269,7 @@
                             <span class="code-title">about.js</span>
                         </div>
                         <div class="code-content">
-<pre><code><span class="code-keyword">const</span> <span class="code-variable">securityEnthusiast</span> = {
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">securityEnthusiast</span> = {
   <span class="code-property">name</span>: <span class="code-string">"Husnain"</span>,
   <span class="code-property">role</span>: <span class="code-string">"Cybersecurity Learner & Aspiring Red Teamer"</span>,
   <span class="code-property">location</span>: <span class="code-string">"Haripur, Pakistan"</span>,
@@ -361,15 +400,16 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Fixed TryHackMe Badge -->
         <div class="thm-badge fade-in">
             <h3>TryHackMe Profile</h3>
             <div class="badge-container">
-                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6068647" title="TryHackMe Profile Badge"></iframe>
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6068647"
+                    title="TryHackMe Profile Badge"></iframe>
             </div>
             <p style="margin-top: 1rem; color: #aaa; font-size: 0.9rem;">
-                Username: <strong style="color: #00FF8C;">thehusnain</strong> 
+                Username: <strong style="color: #00FF8C;">thehusnain</strong>
                 • Rank: <strong style="color: #00D9FF;">Top 2%</strong>
             </p>
         </div>
@@ -384,7 +424,8 @@
                     <h3>Self-Learning & Practice</h3>
                     <div class="timeline-date">2025 - Present</div>
                     <p class="timeline-description">
-                        Intensive self-study in cybersecurity through TryHackMe, CTF challenges, and vulnerable lab environments.
+                        Intensive self-study in cybersecurity through TryHackMe, CTF challenges, and vulnerable lab
+                        environments.
                         Building practical skills in web penetration testing, network security, and cryptography.
                     </p>
                 </div>
@@ -396,7 +437,8 @@
                     <h3>Vulnerable Lab Creation</h3>
                     <div class="timeline-date">2025 - Present</div>
                     <p class="timeline-description">
-                        Creating and maintaining personal vulnerable labs for legal practice and testing of security techniques.
+                        Creating and maintaining personal vulnerable labs for legal practice and testing of security
+                        techniques.
                         Implementing various vulnerabilities to understand exploitation and remediation methods.
                     </p>
                 </div>
@@ -445,287 +487,296 @@
         </div>
     </section>
 
-<section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-        <div class="cert-card fade-in">
-            <div class="cert-icon">🛡️</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Threat Intelligence</div>
-                    <div class="cert-issuer">Red Team Leaders</div>
-                </div>
-            </div>
-            <h3>Certified Threat Intelligence & Governance Analyst (CTIGA)</h3>
-            <p class="cert-description">
-                Certified in threat intelligence methodologies, governance frameworks, and security analysis techniques.
-                Completed all requirements and passed the comprehensive examination.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">Feb 2026</span>
-            </div>
-        </div>
-
-        <div class="cert-card fade-in" style="animation-delay: 0.1s;">
-            <div class="cert-icon">🔐</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Cybersecurity</div>
-                    <div class="cert-issuer">Cisco</div>
-                </div>
-            </div>
-            <h3>Introduction to Cybersecurity</h3>
-            <p class="cert-description">
-                Completed comprehensive introduction to cybersecurity covering threats, vulnerabilities,
-                cryptography basics, and network security fundamentals.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">2025</span>
-            </div>
-        </div>
-
-        <div class="cert-card fade-in" style="animation-delay: 0.2s;">
-            <div class="cert-icon">🏆</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Achievement</div>
-                    <div class="cert-issuer">TryHackMe</div>
-                </div>
-            </div>
-            <h3>Top 2% Global Ranking</h3>
-            <p class="cert-description">
-                Achieved top 2% ranking among TryHackMe's global community through consistent learning
-                and completion of security challenges.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">2025</span>
-                <a href="https://tryhackme.com/p/thehusnain" target="_blank" class="cert-link">View Profile &rarr;</a>
-            </div>
-        </div>
-
-        <div class="cert-card fade-in" style="animation-delay: 0.3s;">
-            <div class="cert-icon">🌐</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Networking</div>
-                    <div class="cert-issuer">Cisco</div>
-                </div>
-            </div>
-            <h3>Networking Basics</h3>
-            <p class="cert-description">
-                Fundamental networking knowledge including TCP/IP, network protocols,
-                routing, switching, and network architecture essentials.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">2025</span>
-            </div>
-        </div>
-
-        <!-- New Certificate: SecureDevLabs Webinar -->
-        <div class="cert-card fade-in" style="animation-delay: 0.4s;">
-            <div class="cert-icon">👨‍💻</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Webinar</div>
-                    <div class="cert-issuer">SecureDevLabs</div>
-                </div>
-            </div>
-            <h3>Cyber Security Fundamentals Webinar</h3>
-            <p class="cert-description">
-                Active participation in the Cyber Security Fundamentals webinar hosted by SecureDevLabs,
-                demonstrating enthusiasm for learning and engagement with cybersecurity concepts.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">2026</span>
-            </div>
-        </div>
-
-        <!-- New Certificate: TryHackMe Pre Security -->
-        <div class="cert-card fade-in" style="animation-delay: 0.5s;">
-            <div class="cert-icon">🎓</div>
-            <div class="cert-badge">
-                <div class="cert-badge-inner">
-                    <div class="cert-title">Learning Path</div>
-                    <div class="cert-issuer">TryHackMe</div>
-                </div>
-            </div>
-            <h3>Pre Security (New) Learning Path</h3>
-            <p class="cert-description">
-                Successfully completed the Pre Security learning path on TryHackMe.
-                Course duration: 19 hours 10 minutes. Completed on 20th February 2026.
-            </p>
-            <div class="cert-footer">
-                <span class="cert-date">Feb 2026</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Certificate Gallery -->
-    <div class="cert-gallery fade-in" style="margin-top: 4rem;">
-        <h3 style="text-align: center; margin-bottom: 2rem; color: #00FF8C;">
-            <i class="fas fa-award"></i> Certificate Gallery
-        </h3>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <div class="gallery-card">
-                    <div class="gallery-header">
-                        <span class="gallery-badge">CTIGA</span>
-                        <span class="gallery-date">Feb 2026</span>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">🛡️</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Threat Intelligence</div>
+                        <div class="cert-issuer">Red Team Leaders</div>
                     </div>
-                    <div class="gallery-body">
-                        <h4>Certified Threat Intelligence & Governance Analyst</h4>
-                        <p class="gallery-issuer"><i class="fas fa-building"></i> Red Team Leaders</p>
-                        
-                        <!-- Certificate Image Preview -->
-                        <div class="cert-image-preview" onclick="openCertificateImage('src/assets/readteamcertificate.png')">
-                            <img src="src/assets/readteamcertificate.png" alt="CTIGA Certificate" class="cert-thumb">
-                            <div class="preview-overlay">
-                                <i class="fas fa-search-plus"></i> Click to view
+                </div>
+                <h3>Certified Threat Intelligence & Governance Analyst (CTIGA)</h3>
+                <p class="cert-description">
+                    Certified in threat intelligence methodologies, governance frameworks, and security analysis
+                    techniques.
+                    Completed all requirements and passed the comprehensive examination.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Feb 2026</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.1s;">
+                <div class="cert-icon">🔐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Cybersecurity</div>
+                        <div class="cert-issuer">Cisco</div>
+                    </div>
+                </div>
+                <h3>Introduction to Cybersecurity</h3>
+                <p class="cert-description">
+                    Completed comprehensive introduction to cybersecurity covering threats, vulnerabilities,
+                    cryptography basics, and network security fundamentals.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.2s;">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Achievement</div>
+                        <div class="cert-issuer">TryHackMe</div>
+                    </div>
+                </div>
+                <h3>Top 2% Global Ranking</h3>
+                <p class="cert-description">
+                    Achieved top 2% ranking among TryHackMe's global community through consistent learning
+                    and completion of security challenges.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                    <a href="https://tryhackme.com/p/thehusnain" target="_blank" class="cert-link">View Profile
+                        &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.3s;">
+                <div class="cert-icon">🌐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Networking</div>
+                        <div class="cert-issuer">Cisco</div>
+                    </div>
+                </div>
+                <h3>Networking Basics</h3>
+                <p class="cert-description">
+                    Fundamental networking knowledge including TCP/IP, network protocols,
+                    routing, switching, and network architecture essentials.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>
+
+            <!-- New Certificate: SecureDevLabs Webinar -->
+            <div class="cert-card fade-in" style="animation-delay: 0.4s;">
+                <div class="cert-icon">👨‍💻</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Webinar</div>
+                        <div class="cert-issuer">SecureDevLabs</div>
+                    </div>
+                </div>
+                <h3>Cyber Security Fundamentals Webinar</h3>
+                <p class="cert-description">
+                    Active participation in the Cyber Security Fundamentals webinar hosted by SecureDevLabs,
+                    demonstrating enthusiasm for learning and engagement with cybersecurity concepts.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2026</span>
+                </div>
+            </div>
+
+            <!-- New Certificate: TryHackMe Pre Security -->
+            <div class="cert-card fade-in" style="animation-delay: 0.5s;">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Learning Path</div>
+                        <div class="cert-issuer">TryHackMe</div>
+                    </div>
+                </div>
+                <h3>Pre Security (New) Learning Path</h3>
+                <p class="cert-description">
+                    Successfully completed the Pre Security learning path on TryHackMe.
+                    Course duration: 19 hours 10 minutes. Completed on 20th February 2026.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Feb 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate Gallery -->
+        <div class="cert-gallery fade-in" style="margin-top: 4rem;">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: #00FF8C;">
+                <i class="fas fa-award"></i> Certificate Gallery
+            </h3>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-header">
+                            <span class="gallery-badge">CTIGA</span>
+                            <span class="gallery-date">Feb 2026</span>
+                        </div>
+                        <div class="gallery-body">
+                            <h4>Certified Threat Intelligence & Governance Analyst</h4>
+                            <p class="gallery-issuer"><i class="fas fa-building"></i> Red Team Leaders</p>
+
+                            <!-- Certificate Image Preview -->
+                            <div class="cert-image-preview"
+                                onclick="openCertificateImage('src/assets/readteamcertificate.png')">
+                                <img src="src/assets/readteamcertificate.png" alt="CTIGA Certificate"
+                                    class="cert-thumb">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-search-plus"></i> Click to view
+                                </div>
+                            </div>
+
+                            <div class="gallery-actions">
+                                <a href="src/assets/readteamcertificate.png" target="_blank" class="gallery-preview">
+                                    <i class="fas fa-download"></i> Full Image
+                                </a>
                             </div>
                         </div>
-                        
-                        <div class="gallery-actions">
-                            <a href="src/assets/readteamcertificate.png" target="_blank" class="gallery-preview">
-                                <i class="fas fa-download"></i> Full Image
-                            </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-header">
+                            <span class="gallery-badge">Cisco</span>
+                            <span class="gallery-date">2025</span>
+                        </div>
+                        <div class="gallery-body">
+                            <h4>Introduction to Cybersecurity</h4>
+                            <p class="gallery-issuer"><i class="fas fa-university"></i> Cisco Networking Academy</p>
+
+                            <!-- Certificate Image Preview -->
+                            <div class="cert-image-preview" onclick="openCertificateImage('src/assets/cisco.png')">
+                                <img src="src/assets/cisco.png" alt="Cisco Certificate" class="cert-thumb">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-search-plus"></i> Click to view
+                                </div>
+                            </div>
+
+                            <div class="gallery-actions">
+                                <a href="src/assets/cisco.png" target="_blank" class="gallery-preview">
+                                    <i class="fas fa-download"></i> Full Image
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <div class="gallery-card">
-                    <div class="gallery-header">
-                        <span class="gallery-badge">Cisco</span>
-                        <span class="gallery-date">2025</span>
-                    </div>
-                    <div class="gallery-body">
-                        <h4>Introduction to Cybersecurity</h4>
-                        <p class="gallery-issuer"><i class="fas fa-university"></i> Cisco Networking Academy</p>
-                        
-                        <!-- Certificate Image Preview -->
-                        <div class="cert-image-preview" onclick="openCertificateImage('src/assets/cisco.png')">
-                            <img src="src/assets/cisco.png" alt="Cisco Certificate" class="cert-thumb">
-                            <div class="preview-overlay">
-                                <i class="fas fa-search-plus"></i> Click to view
-                            </div>
+                <!-- CTF Participation Certificate -->
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-header">
+                            <span class="gallery-badge">CTF</span>
+                            <span class="gallery-date">2026</span>
                         </div>
-                        
-                        <div class="gallery-actions">
-                            <a href="src/assets/cisco.png" target="_blank" class="gallery-preview">
-                                <i class="fas fa-download"></i> Full Image
-                            </a>
+                        <div class="gallery-body">
+                            <h4>CTF Competition Participation</h4>
+                            <p class="gallery-issuer"><i class="fas fa-building"></i> PAF-IAST Cyber-Sec Society</p>
+
+                            <!-- Certificate Image Preview -->
+                            <div class="cert-image-preview" onclick="openCertificateImage('src/assets/techjam.png')">
+                                <img src="src/assets/techjam.png" alt="CTF Participation Certificate"
+                                    class="cert-thumb">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-search-plus"></i> Click to view
+                                </div>
+                            </div>
+
+                            <div class="gallery-actions">
+                                <a href="src/assets/techjam.png" target="_blank" class="gallery-preview">
+                                    <i class="fas fa-download"></i> Full Image
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- CTF Participation Certificate -->
-            <div class="gallery-item">
-                <div class="gallery-card">
-                    <div class="gallery-header">
-                        <span class="gallery-badge">CTF</span>
-                        <span class="gallery-date">2026</span>
-                    </div>
-                    <div class="gallery-body">
-                        <h4>CTF Competition Participation</h4>
-                        <p class="gallery-issuer"><i class="fas fa-building"></i> PAF-IAST Cyber-Sec Society</p>
-                        
-                        <!-- Certificate Image Preview -->
-                        <div class="cert-image-preview" onclick="openCertificateImage('src/assets/techjam.png')">
-                            <img src="src/assets/techjam.png" alt="CTF Participation Certificate" class="cert-thumb">
-                            <div class="preview-overlay">
-                                <i class="fas fa-search-plus"></i> Click to view
-                            </div>
+                <!-- New Gallery Item: SecureDevLabs Webinar -->
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-header">
+                            <span class="gallery-badge">Webinar</span>
+                            <span class="gallery-date">2026</span>
                         </div>
-                        
-                        <div class="gallery-actions">
-                            <a href="src/assets/techjam.png" target="_blank" class="gallery-preview">
-                                <i class="fas fa-download"></i> Full Image
-                            </a>
+                        <div class="gallery-body">
+                            <h4>Cyber Security Fundamentals Webinar</h4>
+                            <p class="gallery-issuer"><i class="fas fa-building"></i> SecureDevLabs</p>
+
+                            <!-- Certificate Image Preview -->
+                            <div class="cert-image-preview" onclick="openCertificateImage('src/assets/webinar.png')">
+                                <img src="src/assets/webinar.png" alt="SecureDevLabs Webinar Certificate"
+                                    class="cert-thumb">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-search-plus"></i> Click to view
+                                </div>
+                            </div>
+
+                            <div class="gallery-actions">
+                                <a href="src/assets/webinar.png" target="_blank" class="gallery-preview">
+                                    <i class="fas fa-download"></i> Full Image
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- New Gallery Item: SecureDevLabs Webinar -->
-            <div class="gallery-item">
-                <div class="gallery-card">
-                    <div class="gallery-header">
-                        <span class="gallery-badge">Webinar</span>
-                        <span class="gallery-date">2026</span>
-                    </div>
-                    <div class="gallery-body">
-                        <h4>Cyber Security Fundamentals Webinar</h4>
-                        <p class="gallery-issuer"><i class="fas fa-building"></i> SecureDevLabs</p>
-                        
-                        <!-- Certificate Image Preview -->
-                        <div class="cert-image-preview" onclick="openCertificateImage('src/assets/webinar.png')">
-                            <img src="src/assets/webinar.png" alt="SecureDevLabs Webinar Certificate" class="cert-thumb">
-                            <div class="preview-overlay">
-                                <i class="fas fa-search-plus"></i> Click to view
-                            </div>
+                <!-- New Gallery Item: TryHackMe Pre Security -->
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-header">
+                            <span class="gallery-badge">TryHackMe</span>
+                            <span class="gallery-date">Feb 2026</span>
                         </div>
-                        
-                        <div class="gallery-actions">
-                            <a href="src/assets/webinar.png" target="_blank" class="gallery-preview">
-                                <i class="fas fa-download"></i> Full Image
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="gallery-body">
+                            <h4>Pre Security (New) Learning Path</h4>
+                            <p class="gallery-issuer"><i class="fas fa-building"></i> TryHackMe</p>
 
-            <!-- New Gallery Item: TryHackMe Pre Security -->
-            <div class="gallery-item">
-                <div class="gallery-card">
-                    <div class="gallery-header">
-                        <span class="gallery-badge">TryHackMe</span>
-                        <span class="gallery-date">Feb 2026</span>
-                    </div>
-                    <div class="gallery-body">
-                        <h4>Pre Security (New) Learning Path</h4>
-                        <p class="gallery-issuer"><i class="fas fa-building"></i> TryHackMe</p>
-                        
-                        <!-- Certificate Image Preview -->
-                        <div class="cert-image-preview" onclick="openCertificateImage('src/assets/presecuirty.png')">
-                            <img src="src/assets/presecuirty.png" alt="TryHackMe Pre Security Certificate" class="cert-thumb">
-                            <div class="preview-overlay">
-                                <i class="fas fa-search-plus"></i> Click to view
+                            <!-- Certificate Image Preview -->
+                            <div class="cert-image-preview"
+                                onclick="openCertificateImage('src/assets/presecuirty.png')">
+                                <img src="src/assets/presecuirty.png" alt="TryHackMe Pre Security Certificate"
+                                    class="cert-thumb">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-search-plus"></i> Click to view
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="gallery-actions">
-                            <a href="src/assets/presecuirty.png" target="_blank" class="gallery-preview">
-                                <i class="fas fa-download"></i> Full Image
-                            </a>
+
+                            <div class="gallery-actions">
+                                <a href="src/assets/presecuirty.png" target="_blank" class="gallery-preview">
+                                    <i class="fas fa-download"></i> Full Image
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Certificate Preview Modal (Empty - will be filled by JavaScript) -->
-    <div id="certificateModal" class="cert-modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeCertificate()">&times;</span>
-            <div class="modal-body">
-                <div id="certificateView">
-                    <!-- Certificate content will be loaded here by JavaScript -->
+        <!-- Certificate Preview Modal (Empty - will be filled by JavaScript) -->
+        <div id="certificateModal" class="cert-modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeCertificate()">&times;</span>
+                <div class="modal-body">
+                    <div id="certificateView">
+                        <!-- Certificate content will be loaded here by JavaScript -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
                 <h3>🛡️ WebShield Scanner</h3>
-                <p>A comprehensive web application security scanner that tests websites for vulnerabilities using Nmap, SQLMap, SSLScan, and Nikto. Features automated report generation with AI analysis.</p>
+                <p>A comprehensive web application security scanner that tests websites for vulnerabilities using Nmap,
+                    SQLMap, SSLScan, and Nikto. Features automated report generation with AI analysis.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Nmap</span>
                     <span class="tech-tag">SQLMap</span>
@@ -736,10 +787,11 @@
                 <a href="https://webshield.tech" class="project-link">Live Demo &rarr;</a>
                 <a href="https://github.com/webshield-tech" class="project-link">Source Code &rarr;</a>
             </div>
-            
+
             <div class="project-card fade-in" style="animation-delay: 0.1s;">
                 <h3>🧪 Vulnerable Practice Lab</h3>
-                <p>Personal vulnerable lab environment for practicing penetration testing techniques legally. Includes intentionally vulnerable web applications and network services for skill development.</p>
+                <p>Personal vulnerable lab environment for practicing penetration testing techniques legally. Includes
+                    intentionally vulnerable web applications and network services for skill development.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Docker</span>
                     <span class="tech-tag">Kali Linux</span>
@@ -748,10 +800,11 @@
                 </div>
                 <a href="#" class="project-link">Explore Lab &rarr;</a>
             </div>
-            
+
             <div class="project-card fade-in" style="animation-delay: 0.2s;">
                 <h3>🔐 Cryptography Toolkit</h3>
-                <p>Collection of cryptography tools and scripts for encryption, decryption, and cryptographic analysis. Includes implementations of various ciphers and cryptographic protocols.</p>
+                <p>Collection of cryptography tools and scripts for encryption, decryption, and cryptographic analysis.
+                    Includes implementations of various ciphers and cryptographic protocols.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Cryptography</span>
@@ -777,7 +830,8 @@
                         <span class="blog-tag">Learning</span>
                         <span class="blog-tag">Journey</span>
                     </div>
-                    <p>Reflections on my initial cybersecurity journey, from basic concepts to achieving top 2% on TryHackMe. Challenges faced and lessons learned...</p>
+                    <p>Reflections on my initial cybersecurity journey, from basic concepts to achieving top 2% on
+                        TryHackMe. Challenges faced and lessons learned...</p>
                     <a href="#" class="project-link">Read More &rarr;</a>
                 </div>
             </div>
@@ -793,7 +847,8 @@
                         <span class="blog-tag">Penetration Testing</span>
                         <span class="blog-tag">OWASP</span>
                     </div>
-                    <p>Understanding common web vulnerabilities and how to ethically test for them. Covering SQL injection, XSS, CSRF, and security headers...</p>
+                    <p>Understanding common web vulnerabilities and how to ethically test for them. Covering SQL
+                        injection, XSS, CSRF, and security headers...</p>
                     <a href="#" class="project-link">Read More &rarr;</a>
                 </div>
             </div>
@@ -809,238 +864,387 @@
                         <span class="blog-tag">Practice</span>
                         <span class="blog-tag">Legal Testing</span>
                     </div>
-                    <p>Step-by-step guide to creating your own vulnerable lab environment for legal security practice. Tools, configurations, and safety considerations...</p>
+                    <p>Step-by-step guide to creating your own vulnerable lab environment for legal security practice.
+                        Tools, configurations, and safety considerations...</p>
                     <a href="#" class="project-link">Read More &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-   <section id="contact">
-    <h2>Get In Touch</h2>
+    <section id="contact">
+        <h2>Get In Touch</h2>
 
-    <div class="contact-container">
-        <div class="contact-grid">
+        <div class="contact-container">
+            <div class="contact-grid">
 
-            <div class="contact-item fade-in">
-                <div class="contact-icon email">
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="contact-item fade-in">
+                    <div class="contact-icon email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:huxnain.cs@gmail.com">huxnain.cs@gmail.com</a>
                 </div>
-                <h3>Email</h3>
-                <a href="mailto:huxnain.cs@gmail.com">huxnain.cs@gmail.com</a>
-            </div>
 
-            <div class="contact-item fade-in" style="animation-delay: 0.1s;">
-                <div class="contact-icon github">
-                    <i class="fa-brands fa-github"></i>
+                <div class="contact-item fade-in" style="animation-delay: 0.1s;">
+                    <div class="contact-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/thehusnain" target="_blank">
+                        github.com/thehusnain
+                    </a>
                 </div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/thehusnain" target="_blank">
-                    github.com/thehusnain
-                </a>
-            </div>
 
-            <div class="contact-item fade-in" style="animation-delay: 0.2s;">
-                <div class="contact-icon thm">
-                    <i class="fa-solid fa-terminal"></i>
+                <div class="contact-item fade-in" style="animation-delay: 0.2s;">
+                    <div class="contact-icon thm">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h3>TryHackMe</h3>
+                    <a href="https://tryhackme.com/p/thehusnain" target="_blank">
+                        tryhackme.com/p/thehusnain
+                    </a>
                 </div>
-                <h3>TryHackMe</h3>
-                <a href="https://tryhackme.com/p/thehusnain" target="_blank">
-                    tryhackme.com/p/thehusnain
-                </a>
-            </div>
 
-            <div class="contact-item fade-in" style="animation-delay: 0.3s;">
-                <div class="contact-icon linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
+                <div class="contact-item fade-in" style="animation-delay: 0.3s;">
+                    <div class="contact-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/husnain-fiaz-7a4761369" target="_blank">
+                        linkedin.com/in/husnain-fiaz-7a4761369
+                    </a>
                 </div>
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/husnain-fiaz-7a4761369" target="_blank">
-                    linkedin.com/in/husnain-fiaz-7a4761369
-                </a>
-            </div>
 
-            <div class="contact-item fade-in" style="animation-delay: 0.4s;">
-                <div class="contact-icon discord">
-                    <i class="fa-brands fa-discord"></i>
+                <div class="contact-item fade-in" style="animation-delay: 0.4s;">
+                    <div class="contact-icon discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <a href="#">
+                        thephantomdelux
+                    </a>
                 </div>
-                <h3>Discord</h3>
-                <a href="#">
-                    thephantomdelux
-                </a>
-            </div>
 
-            <div class="contact-item fade-in" style="animation-delay: 0.5s;">
-                <div class="contact-icon location">
-                    <i class="fa-solid fa-location-dot"></i>
+                <div class="contact-item fade-in" style="animation-delay: 0.5s;">
+                    <div class="contact-icon location">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <span>Haripur, Pakistan</span>
                 </div>
-                <h3>Location</h3>
-                <span>Haripur, Pakistan</span>
-            </div>
 
+            </div>
         </div>
-    </div>
 
 
-     <div class="contact-form fade-in">
-    <form action="https://formspree.io/f/xojnqqle" method="POST">
-        <div class="form-group">
-            <label>$ name --input</label>
-            <input type="text" name="name" placeholder="your name" required>
-            <small class="field-sign">Signed by husnain</small>
+        <div class="contact-form fade-in">
+            <form action="https://formspree.io/f/xojnqqle" method="POST">
+                <div class="form-group">
+                    <label>$ name --input</label>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <small class="field-sign">Signed by husnain</small>
+                </div>
+                <div class="form-group">
+                    <label>$ email --input</label>
+                    <input type="email" name="email" placeholder="your email address" required>
+                </div>
+                <div class="form-group">
+                    <label>$ message --input</label>
+                    <textarea name="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <!-- Formspree honeypot to prevent spam -->
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label>$ email --input</label>
-            <input type="email" name="email" placeholder="your email address" required>
-        </div>
-        <div class="form-group">
-            <label>$ message --input</label>
-            <textarea name="message" placeholder="Your message here..." required></textarea>
-        </div>
-        <!-- Formspree honeypot to prevent spam -->
-        <input type="text" name="_gotcha" style="display:none">
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-</div>
-    <footer>
-        <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
-        <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by <strong>husnain</strong></p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
+            <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by
+                <strong>husnain</strong></p>
+        </footer>
 
-    <script src="src/js/main.js"></script>
-    <script>
-fetch("https://webhook.site/a8015251-dcfa-446d-a235-8a266ea5aaa7", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    page: window.location.href,
-    referrer: document.referrer,
-    timestamp: new Date().toISOString()
-  })
-});
-</script>
-<footer>
-  <small>
-    This website logs basic access metadata (IP address, browser, country)
-    for security monitoring and learning purposes.
-  </small>
-</footer>
+        <script src="src/js/main.js"></script>
+        <script>
+            fetch("https://webhook.site/a8015251-dcfa-446d-a235-8a266ea5aaa7", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    page: window.location.href,
+                    referrer: document.referrer,
+                    timestamp: new Date().toISOString()
+                })
+            });
+        </script>
+        <footer>
+            <small>
+                This website logs basic access metadata (IP address, browser, country)
+                for security monitoring and learning purposes.
+            </small>
+        </footer>
 
-<script>
-    // Mobile menu toggle function
-    function toggleMenu() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.toggle('active');
-    }
-    
-    function closeMenu() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.remove('active');
-    }
-    
-    // Boot screen fade out
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.getElementById('bootScreen').classList.add('fade-out');
-        }, 4500);
-    });
-    
-    // Certificate image viewer
-    function openCertificateImage(src) {
-        // Create modal if it doesn't exist
-        let modal = document.getElementById('certImageModal');
-        if (!modal) {
-            modal = document.createElement('div');
-            modal.id = 'certImageModal';
-            modal.className = 'cert-image-modal';
-            modal.innerHTML = `
+        <script>
+            // Mobile menu toggle function
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+
+            function closeMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            }
+
+            // Boot screen fade out
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('bootScreen').classList.add('fade-out');
+                }, 4500);
+            });
+
+            // Certificate image viewer
+            function openCertificateImage(src) {
+                // Create modal if it doesn't exist
+                let modal = document.getElementById('certImageModal');
+                if (!modal) {
+                    modal = document.createElement('div');
+                    modal.id = 'certImageModal';
+                    modal.className = 'cert-image-modal';
+                    modal.innerHTML = `
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeCertificateImage()">&times;</span>
                     <img id="certFullImage" src="" alt="Certificate">
                 </div>
             `;
-            document.body.appendChild(modal);
-        }
-        
-        const img = document.getElementById('certFullImage') || modal.querySelector('img');
-        img.src = src;
-        modal.style.display = 'flex';
-    }
-    
-    function closeCertificateImage() {
-        const modal = document.getElementById('certImageModal');
-        if (modal) {
-            modal.style.display = 'none';
-        }
-    }
-    
-    // Close modal when clicking outside
-    window.addEventListener('click', function(e) {
-        const modal = document.getElementById('certImageModal');
-        if (modal && e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-</script>
+                    document.body.appendChild(modal);
+                }
 
-<style>
-    /* Certificate Image Modal */
-    .cert-image-modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        z-index: 99999;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .cert-image-modal .modal-content {
-        max-width: 90%;
-        max-height: 90vh;
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        position: relative;
-    }
-    
-    .cert-image-modal img {
-        max-width: 100%;
-        max-height: 80vh;
-        border: 2px solid #00FF8C;
-        border-radius: 10px;
-        box-shadow: 0 0 30px rgba(0, 255, 140, 0.5);
-    }
-    
-    .cert-image-modal .close-modal {
-        position: absolute;
-        top: -40px;
-        right: -40px;
-        color: #fff;
-        background: rgba(0, 0, 0, 0.7);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        cursor: pointer;
-        z-index: 10000;
-    }
-    
-    @media (max-width: 768px) {
-        .cert-image-modal .close-modal {
-            top: -50px;
-            right: 0;
-        }
-    }
-</style>
+                const img = document.getElementById('certFullImage') || modal.querySelector('img');
+                img.src = src;
+                modal.style.display = 'flex';
+            }
+
+            function closeCertificateImage() {
+                const modal = document.getElementById('certImageModal');
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            // Close modal when clicking outside
+            window.addEventListener('click', function (e) {
+                const modal = document.getElementById('certImageModal');
+                if (modal && e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Cyber Interactive Background
+            function initCyberBackground() {
+                const canvas = document.getElementById('cyberBackground');
+                if (!canvas) return;
+
+                const ctx = canvas.getContext('2d');
+
+                // Set canvas size
+                function resizeCanvas() {
+                    canvas.width = canvas.offsetWidth;
+                    canvas.height = canvas.offsetHeight;
+                }
+
+                window.addEventListener('resize', resizeCanvas);
+                // Initial resize needs to wait for CSS to apply
+                setTimeout(resizeCanvas, 100);
+
+                const particlesArray = [];
+                const numberOfParticles = window.innerWidth < 768 ? 50 : 100;
+
+                // Mouse interact
+                const mouse = {
+                    x: null,
+                    y: null,
+                    radius: 150
+                }
+
+                window.addEventListener('mousemove', function (event) {
+                    const rect = canvas.getBoundingClientRect();
+                    mouse.x = event.clientX - rect.left;
+                    mouse.y = event.clientY - rect.top;
+                });
+
+                window.addEventListener('mouseout', function () {
+                    mouse.x = undefined;
+                    mouse.y = undefined;
+                });
+
+                class Particle {
+                    constructor() {
+                        this.x = Math.random() * canvas.width;
+                        this.y = Math.random() * canvas.height;
+                        this.size = Math.random() * 2 + 1;
+                        this.baseX = this.x;
+                        this.baseY = this.y;
+                        this.density = (Math.random() * 30) + 1;
+                        this.speedX = Math.random() * 2 - 1;
+                        this.speedY = Math.random() * 2 - 1;
+                        this.color = Math.random() > 0.5 ? '#00FF8C' : '#00D9FF';
+                    }
+
+                    draw() {
+                        ctx.fillStyle = this.color;
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                        ctx.closePath();
+                        ctx.fill();
+                    }
+
+                    update() {
+                        // Move naturally
+                        this.x += this.speedX;
+                        this.y += this.speedY;
+
+                        // Bounce off edges
+                        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+                        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+
+                        // Hover effect
+                        if (mouse.x && mouse.y) {
+                            let dx = mouse.x - this.x;
+                            let dy = mouse.y - this.y;
+                            let distance = Math.sqrt(dx * dx + dy * dy);
+                            let forceDirectionX = dx / distance;
+                            let forceDirectionY = dy / distance;
+                            let maxDistance = mouse.radius;
+                            let force = (maxDistance - distance) / maxDistance;
+                            let directionX = forceDirectionX * force * this.density;
+                            let directionY = forceDirectionY * force * this.density;
+
+                            if (distance < mouse.radius) {
+                                this.x -= directionX;
+                                this.y -= directionY;
+                            }
+                        }
+                    }
+                }
+
+                function init() {
+                    for (let i = 0; i < numberOfParticles; i++) {
+                        particlesArray.push(new Particle());
+                    }
+                }
+
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    for (let i = 0; i < particlesArray.length; i++) {
+                        particlesArray[i].update();
+                        particlesArray[i].draw();
+
+                        // Connect particles
+                        for (let j = i; j < particlesArray.length; j++) {
+                            let dx = particlesArray[i].x - particlesArray[j].x;
+                            let dy = particlesArray[i].y - particlesArray[j].y;
+                            let distance = Math.sqrt(dx * dx + dy * dy);
+
+                            if (distance < 100) {
+                                ctx.beginPath();
+                                ctx.strokeStyle = `rgba(0, 255, 140, ${0.1 - distance / 1000})`; // Fade out with distance
+                                ctx.lineWidth = 0.5;
+                                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                                ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                                ctx.stroke();
+                                ctx.closePath();
+                            }
+                        }
+
+                        // Connect to mouse
+                        if (mouse.x && mouse.y) {
+                            let dx = particlesArray[i].x - mouse.x;
+                            let dy = particlesArray[i].y - mouse.y;
+                            let distance = Math.sqrt(dx * dx + dy * dy);
+
+                            if (distance < mouse.radius) {
+                                ctx.beginPath();
+                                ctx.strokeStyle = `rgba(0, 217, 255, ${0.2 - distance / 1000})`;
+                                ctx.lineWidth = 1;
+                                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                                ctx.lineTo(mouse.x, mouse.y);
+                                ctx.stroke();
+                                ctx.closePath();
+                            }
+                        }
+                    }
+                    requestAnimationFrame(animate);
+                }
+
+                init();
+                animate();
+            }
+
+            // Call interactive background after window loads
+            window.addEventListener('load', function () {
+                initCyberBackground();
+            });
+        </script>
+
+        <style>
+            /* Certificate Image Modal */
+            .cert-image-modal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.95);
+                z-index: 99999;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .cert-image-modal .modal-content {
+                max-width: 90%;
+                max-height: 90vh;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                position: relative;
+            }
+
+            .cert-image-modal img {
+                max-width: 100%;
+                max-height: 80vh;
+                border: 2px solid #00FF8C;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0, 255, 140, 0.5);
+            }
+
+            .cert-image-modal .close-modal {
+                position: absolute;
+                top: -40px;
+                right: -40px;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                cursor: pointer;
+                z-index: 10000;
+            }
+
+            @media (max-width: 768px) {
+                .cert-image-modal .close-modal {
+                    top: -50px;
+                    right: 0;
+                }
+            }
+        </style>
 
 </body>
+
 </html>
