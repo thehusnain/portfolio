@@ -9,6 +9,12 @@
     <meta name="author" content="Husnain">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/animations.css">
+    <!-- Fonts for Cybersecurity Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @media (max-width: 768px) {
@@ -146,7 +152,8 @@
             <div class="boot-progress">
                 <div class="boot-progress-bar"></div>
             </div>
-            <p class="boot-footer">Portfolio loading... <span class="boot-sign">— husnain</span></p>
+            <p class="boot-footer">System access granted. <span class="boot-sign">[PRESS ANY KEY OR CLICK TO
+                    ENTER]</span></p>
         </div>
     </div>
 
@@ -169,6 +176,15 @@
             </div>
         </div>
     </nav>
+
+    <!-- Floating Cyber Sidebar -->
+    <div class="cyber-sidebar">
+        <a href="https://github.com/thehusnain" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://tryhackme.com/p/thehusnain" target="_blank" title="TryHackMe"><i
+                class="fas fa-terminal"></i></a>
+        <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+        <div class="sidebar-line"></div>
+    </div>
 
     <section class="hero" id="home">
         <canvas id="cyberBackground"></canvas>
@@ -235,8 +251,7 @@
                     <p class="about-intro">
                         Hi — I'm <span class="highlight">Husnain</span>, a passionate cybersecurity enthusiast and BS
                         Computer Science student
-                        from <strong>Haripur, Pakistan</strong>. I started my cybersecurity journey 4 months ago and
-                        have been dedicating
+                        from <strong>Haripur, Pakistan</strong>. I have been dedicating
                         my time to learning, practicing, and improving every single day.
                     </p>
 
@@ -274,7 +289,7 @@
   <span class="code-property">role</span>: <span class="code-string">"Cybersecurity Learner & Aspiring Red Teamer"</span>,
   <span class="code-property">location</span>: <span class="code-string">"Haripur, Pakistan"</span>,
   <span class="code-property">education</span>: <span class="code-string">"BS Computer Science"</span>,
-  <span class="code-property">experience</span>: <span class="code-string">"4 months in cybersecurity"</span>,
+  <span class="code-property">experience</span>: <span class="code-string">"Continuous learner & practitioner"</span>,
   <span class="code-property">achievements</span>: [
     <span class="code-string">"Top 2% on TryHackMe"</span>,
     <span class="code-string">"Cisco Cybersecurity Certificate"</span>,
@@ -405,8 +420,10 @@
         <div class="thm-badge fade-in">
             <h3>TryHackMe Profile</h3>
             <div class="badge-container">
-                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6068647"
-                    title="TryHackMe Profile Badge"></iframe>
+                <a href="https://tryhackme.com/p/thehusnain" target="_blank">
+                    <img src="https://tryhackme-badges.s3.amazonaws.com/thehusnain.png" alt="TryHackMe Badge"
+                        style="max-width: 100%; border-radius: 8px;">
+                </a>
             </div>
             <p style="margin-top: 1rem; color: #aaa; font-size: 0.9rem;">
                 Username: <strong style="color: #00FF8C;">thehusnain</strong>
@@ -958,292 +975,246 @@
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
-        <footer>
-            <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
-            <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by
-                <strong>husnain</strong></p>
-        </footer>
+    </section>
 
-        <script src="src/js/main.js"></script>
-        <script>
-            fetch("https://webhook.site/a8015251-dcfa-446d-a235-8a266ea5aaa7", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    page: window.location.href,
-                    referrer: document.referrer,
-                    timestamp: new Date().toISOString()
-                })
-            });
-        </script>
-        <footer>
-            <small>
-                This website logs basic access metadata (IP address, browser, country)
-                for security monitoring and learning purposes.
-            </small>
-        </footer>
+    <footer>
+        <p>&copy; 2026 <span class="signature">husnain</span>. All rights reserved.</p>
+        <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by
+            <strong>husnain</strong>
+        </p>
+    </footer>
 
-        <script>
-            // Mobile menu toggle function
-            function toggleMenu() {
-                const navLinks = document.getElementById('navLinks');
-                navLinks.classList.toggle('active');
-            }
+    <script src="src/js/main.js"></script>
+    <script>
+        // removed boot screen timeout
 
-            function closeMenu() {
-                const navLinks = document.getElementById('navLinks');
-                navLinks.classList.remove('active');
-            }
-
-            // Boot screen fade out
-            window.addEventListener('load', function () {
-                setTimeout(function () {
-                    document.getElementById('bootScreen').classList.add('fade-out');
-                }, 4500);
-            });
-
-            // Certificate image viewer
-            function openCertificateImage(src) {
-                // Create modal if it doesn't exist
-                let modal = document.getElementById('certImageModal');
-                if (!modal) {
-                    modal = document.createElement('div');
-                    modal.id = 'certImageModal';
-                    modal.className = 'cert-image-modal';
-                    modal.innerHTML = `
-                <div class="modal-content">
-                    <span class="close-modal" onclick="closeCertificateImage()">&times;</span>
-                    <img id="certFullImage" src="" alt="Certificate">
-                </div>
+        // Certificate image viewer
+        function openCertificateImage(src) {
+            // Create modal if it doesn't exist
+            let modal = document.getElementById('certImageModal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'certImageModal';
+                modal.className = 'cert-image-modal';
+                modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeCertificateImage()">&times;</span>
+                <img id="certFullImage" src="" alt="Certificate">
+            </div>
             `;
-                    document.body.appendChild(modal);
-                }
-
-                const img = document.getElementById('certFullImage') || modal.querySelector('img');
-                img.src = src;
-                modal.style.display = 'flex';
+                document.body.appendChild(modal);
             }
 
-            function closeCertificateImage() {
-                const modal = document.getElementById('certImageModal');
-                if (modal) {
-                    modal.style.display = 'none';
-                }
+            const img = document.getElementById('certFullImage') || modal.querySelector('img');
+            img.src = src;
+            modal.style.display = 'flex';
+        }
+
+        function closeCertificateImage() {
+            const modal = document.getElementById('certImageModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function (e) {
+            const modal = document.getElementById('certImageModal');
+            if (modal && e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Cyber Interactive Background
+        function initCyberBackground() {
+            const canvas = document.getElementById('cyberBackground');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+
+            // Set canvas size
+            function resizeCanvas() {
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
             }
 
-            // Close modal when clicking outside
-            window.addEventListener('click', function (e) {
-                const modal = document.getElementById('certImageModal');
-                if (modal && e.target === modal) {
-                    modal.style.display = 'none';
-                }
+            window.addEventListener('resize', resizeCanvas);
+            // Initial resize needs to wait for CSS to apply
+            setTimeout(resizeCanvas, 100);
+
+            const particlesArray = [];
+            const numberOfParticles = window.innerWidth < 768 ? 50 : 100;
+
+            const mouse = {
+                x: null,
+                y: null,
+                radius: 150
+            };
+
+            window.addEventListener('mousemove', function (event) {
+                const rect = canvas.getBoundingClientRect();
+                mouse.x = event.clientX - rect.left;
+                mouse.y = event.clientY - rect.top;
             });
 
-            // Cyber Interactive Background
-            function initCyberBackground() {
-                const canvas = document.getElementById('cyberBackground');
-                if (!canvas) return;
+            window.addEventListener('mouseout', function () {
+                mouse.x = undefined;
+                mouse.y = undefined;
+            });
 
-                const ctx = canvas.getContext('2d');
-
-                // Set canvas size
-                function resizeCanvas() {
-                    canvas.width = canvas.offsetWidth;
-                    canvas.height = canvas.offsetHeight;
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 2 + 1;
+                    this.baseX = this.x;
+                    this.baseY = this.y;
+                    this.density = (Math.random() * 30) + 1;
+                    this.speedX = Math.random() * 2 - 1;
+                    this.speedY = Math.random() * 2 - 1;
+                    this.color = Math.random() > 0.5 ? '#00FF8C' : '#00D9FF';
                 }
 
-                window.addEventListener('resize', resizeCanvas);
-                // Initial resize needs to wait for CSS to apply
-                setTimeout(resizeCanvas, 100);
-
-                const particlesArray = [];
-                const numberOfParticles = window.innerWidth < 768 ? 50 : 100;
-
-                // Mouse interact
-                const mouse = {
-                    x: null,
-                    y: null,
-                    radius: 150
+                draw() {
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.closePath();
+                    ctx.fill();
                 }
 
-                window.addEventListener('mousemove', function (event) {
-                    const rect = canvas.getBoundingClientRect();
-                    mouse.x = event.clientX - rect.left;
-                    mouse.y = event.clientY - rect.top;
-                });
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
 
-                window.addEventListener('mouseout', function () {
-                    mouse.x = undefined;
-                    mouse.y = undefined;
-                });
+                    if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+                    if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
 
-                class Particle {
-                    constructor() {
-                        this.x = Math.random() * canvas.width;
-                        this.y = Math.random() * canvas.height;
-                        this.size = Math.random() * 2 + 1;
-                        this.baseX = this.x;
-                        this.baseY = this.y;
-                        this.density = (Math.random() * 30) + 1;
-                        this.speedX = Math.random() * 2 - 1;
-                        this.speedY = Math.random() * 2 - 1;
-                        this.color = Math.random() > 0.5 ? '#00FF8C' : '#00D9FF';
-                    }
-
-                    draw() {
-                        ctx.fillStyle = this.color;
-                        ctx.beginPath();
-                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                        ctx.closePath();
-                        ctx.fill();
-                    }
-
-                    update() {
-                        // Move naturally
-                        this.x += this.speedX;
-                        this.y += this.speedY;
-
-                        // Bounce off edges
-                        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
-                        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
-
-                        // Hover effect
-                        if (mouse.x && mouse.y) {
-                            let dx = mouse.x - this.x;
-                            let dy = mouse.y - this.y;
-                            let distance = Math.sqrt(dx * dx + dy * dy);
+                    if (mouse.x && mouse.y) {
+                        let dx = mouse.x - this.x;
+                        let dy = mouse.y - this.y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < mouse.radius) {
                             let forceDirectionX = dx / distance;
                             let forceDirectionY = dy / distance;
-                            let maxDistance = mouse.radius;
-                            let force = (maxDistance - distance) / maxDistance;
-                            let directionX = forceDirectionX * force * this.density;
-                            let directionY = forceDirectionY * force * this.density;
-
-                            if (distance < mouse.radius) {
-                                this.x -= directionX;
-                                this.y -= directionY;
-                            }
+                            let force = (mouse.radius - distance) / mouse.radius;
+                            this.x -= forceDirectionX * force * this.density;
+                            this.y -= forceDirectionY * force * this.density;
                         }
                     }
                 }
+            }
 
-                function init() {
-                    for (let i = 0; i < numberOfParticles; i++) {
-                        particlesArray.push(new Particle());
-                    }
+            function init() {
+                for (let i = 0; i < numberOfParticles; i++) {
+                    particlesArray.push(new Particle());
                 }
+            }
 
-                function animate() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    for (let i = 0; i < particlesArray.length; i++) {
-                        particlesArray[i].update();
-                        particlesArray[i].draw();
-
-                        // Connect particles
-                        for (let j = i; j < particlesArray.length; j++) {
-                            let dx = particlesArray[i].x - particlesArray[j].x;
-                            let dy = particlesArray[i].y - particlesArray[j].y;
-                            let distance = Math.sqrt(dx * dx + dy * dy);
-
-                            if (distance < 100) {
-                                ctx.beginPath();
-                                ctx.strokeStyle = `rgba(0, 255, 140, ${0.1 - distance / 1000})`; // Fade out with distance
-                                ctx.lineWidth = 0.5;
-                                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                                ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-                                ctx.stroke();
-                                ctx.closePath();
-                            }
-                        }
-
-                        // Connect to mouse
-                        if (mouse.x && mouse.y) {
-                            let dx = particlesArray[i].x - mouse.x;
-                            let dy = particlesArray[i].y - mouse.y;
-                            let distance = Math.sqrt(dx * dx + dy * dy);
-
-                            if (distance < mouse.radius) {
-                                ctx.beginPath();
-                                ctx.strokeStyle = `rgba(0, 217, 255, ${0.2 - distance / 1000})`;
-                                ctx.lineWidth = 1;
-                                ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                                ctx.lineTo(mouse.x, mouse.y);
-                                ctx.stroke();
-                                ctx.closePath();
-                            }
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < particlesArray.length; i++) {
+                    particlesArray[i].update();
+                    particlesArray[i].draw();
+                    // Connect particles
+                    for (let j = i; j < particlesArray.length; j++) {
+                        let dx = particlesArray[i].x - particlesArray[j].x;
+                        let dy = particlesArray[i].y - particlesArray[j].y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < 100) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(0, 255, 140, ${0.1 - distance / 1000})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                            ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                            ctx.stroke();
+                            ctx.closePath();
                         }
                     }
-                    requestAnimationFrame(animate);
+                    // Connect to mouse
+                    if (mouse.x && mouse.y) {
+                        let dx = particlesArray[i].x - mouse.x;
+                        let dy = particlesArray[i].y - mouse.y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < mouse.radius) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(0, 217, 255, ${0.2 - distance / 1000})`;
+                            ctx.lineWidth = 1;
+                            ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.stroke();
+                            ctx.closePath();
+                        }
+                    }
                 }
-
-                init();
-                animate();
+                requestAnimationFrame(animate);
             }
+            init();
+            animate();
+        }
 
-            // Call interactive background after window loads
-            window.addEventListener('load', function () {
-                initCyberBackground();
-            });
-        </script>
+        // Call interactive background after window loads
+        window.addEventListener('load', function () {
+            initCyberBackground();
+        });
+    </script>
 
-        <style>
-            /* Certificate Image Modal */
-            .cert-image-modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.95);
-                z-index: 99999;
-                align-items: center;
-                justify-content: center;
-            }
+    <style>
+        /* Certificate Image Modal */
+        .cert-image-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 99999;
+            align-items: center;
+            justify-content: center;
+        }
 
-            .cert-image-modal .modal-content {
-                max-width: 90%;
-                max-height: 90vh;
-                background: transparent;
-                border: none;
-                box-shadow: none;
-                position: relative;
-            }
+        .cert-image-modal .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            position: relative;
+        }
 
-            .cert-image-modal img {
-                max-width: 100%;
-                max-height: 80vh;
-                border: 2px solid #00FF8C;
-                border-radius: 10px;
-                box-shadow: 0 0 30px rgba(0, 255, 140, 0.5);
-            }
+        .cert-image-modal img {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 2px solid #00FF8C;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 140, 0.5);
+        }
 
+        .cert-image-modal .close-modal {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        @media (max-width: 768px) {
             .cert-image-modal .close-modal {
-                position: absolute;
-                top: -40px;
-                right: -40px;
-                color: #fff;
-                background: rgba(0, 0, 0, 0.7);
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 2rem;
-                cursor: pointer;
-                z-index: 10000;
+                top: -50px;
+                right: 0;
             }
-
-            @media (max-width: 768px) {
-                .cert-image-modal .close-modal {
-                    top: -50px;
-                    right: 0;
-                }
-            }
-        </style>
+        }
+    </style>
 
 </body>
 

@@ -60,31 +60,31 @@
 }
 
 .boot-terminal p:nth-child(1) {
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
 .boot-terminal p:nth-child(2) {
-    animation-delay: 1s;
+    animation-delay: 0.4s;
 }
 
 .boot-terminal p:nth-child(3) {
-    animation-delay: 1.5s;
+    animation-delay: 0.6s;
 }
 
 .boot-terminal p:nth-child(4) {
-    animation-delay: 2s;
+    animation-delay: 0.8s;
 }
 
 .boot-terminal p:nth-child(5) {
-    animation-delay: 2.5s;
+    animation-delay: 1.0s;
 }
 
 .boot-terminal p:nth-child(6) {
-    animation-delay: 3s;
+    animation-delay: 1.2s;
 }
 
 .boot-terminal p:nth-child(7) {
-    animation-delay: 3.5s;
+    animation-delay: 1.4s;
 }
 
 .boot-prompt {
@@ -140,14 +140,14 @@
     border-radius: 2px;
     overflow: hidden;
     opacity: 0;
-    animation: bootLine 0.3s forwards 4s;
+    animation: bootLine 0.3s forwards 1.6s;
 }
 
 .boot-progress-bar {
     height: 100%;
     background: linear-gradient(90deg, #00FF8C, #00D9FF);
     width: 0%;
-    animation: progress 2s ease-out forwards 4s;
+    animation: progress 1s ease-out forwards 1.6s;
     box-shadow: 0 0 10px rgba(0, 255, 140, 0.5);
 }
 
@@ -162,7 +162,7 @@
     color: #00FF8C;
     font-size: 0.9rem;
     opacity: 0;
-    animation: bootLine 0.3s forwards 4.5s, blink 1s infinite 5s;
+    animation: bootLine 0.3s forwards 2.6s, blink 1s infinite 3s;
 }
 
 @keyframes bootLine {
@@ -210,7 +210,9 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 1.05rem;
+    /* Larger font size for PC */
     background: #121212;
     color: #fff;
     overflow-x: hidden;
@@ -228,6 +230,63 @@ body::before {
     opacity: 0.05;
     z-index: -1;
     pointer-events: none;
+}
+
+/* Subtle cyber scanlines overlay */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px);
+    z-index: 9000;
+    opacity: 0.4;
+    pointer-events: none;
+    /* FIX: this allows clicks to pass through */
+}
+
+/* Floating Cyber Sidebar */
+.cyber-sidebar {
+    position: fixed;
+    left: 2rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 1000;
+}
+
+.cyber-sidebar a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cyber-sidebar a:hover {
+    color: #00FF8C;
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 10px #00FF8C);
+}
+
+.sidebar-line {
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to bottom, #00FF8C, transparent);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .cyber-sidebar {
+        display: none;
+        /* Hide on small screens to save space */
+    }
 }
 
 nav {
@@ -353,8 +412,9 @@ nav:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transform: translateY(-28px);
+    justify-content: flex-start;
+    transform: none;
+    /* Make alignment more natural instead of forced shift */
 }
 
 @media (max-width: 992px) {
@@ -366,17 +426,17 @@ nav:hover {
 /* Profile Image Styles */
 .profile-image-container {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 380px;
+    height: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 2;
@@ -384,6 +444,12 @@ nav:hover {
     box-shadow: 0 0 20px rgba(0, 255, 140, 0.4);
     position: relative;
     background: #121212;
+    image-rendering: -webkit-optimize-contrast;
+    /* Fix downscaling blurriness */
+    image-rendering: high-quality;
+    transform: translateZ(0);
+    /* Hardware acceleration to fix border-radius blurriness */
+    backface-visibility: hidden;
 }
 
 /* Cyber Rings Animation */
@@ -407,24 +473,24 @@ nav:hover {
 }
 
 .ring-1 {
-    width: 240px;
-    height: 240px;
+    width: 360px;
+    height: 360px;
     border-top: 2px solid #00FF8C;
     border-bottom: 2px solid #00D9FF;
     animation: rotate 10s linear infinite;
 }
 
 .ring-2 {
-    width: 220px;
-    height: 220px;
+    width: 330px;
+    height: 330px;
     border-left: 2px dashed #00FF8C;
     border-right: 2px dashed #00D9FF;
     animation: rotate-reverse 15s linear infinite;
 }
 
 .ring-3 {
-    width: 260px;
-    height: 260px;
+    width: 380px;
+    height: 380px;
     border: 1px solid rgba(0, 255, 140, 0.2);
     box-shadow: 0 0 30px rgba(0, 255, 140, 0.1) inset;
     animation: pulse-ring 4s ease-in-out infinite;
@@ -599,7 +665,8 @@ nav:hover {
 }
 
 h1 {
-    font-size: 4rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #00FF8C, #00D9FF);
     -webkit-background-clip: text;
@@ -668,7 +735,8 @@ h1 {
 
 /* Fix terminal text wrapping */
 .terminal-text {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    /* Make the font larger in desktop */
     line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -764,7 +832,8 @@ section {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
@@ -1515,19 +1584,24 @@ footer .signature {
     align-items: center;
 
     margin: .5rem auto;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-
     width: 100%;
     max-width: 520px;
-    min-height: 230px;
 
-    background: rgba(15, 15, 15, 0.9);
-    border: 1px solid rgba(0, 255, 140, 0.35);
-    border-radius: 14px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
 
-    box-shadow: 0 0 25px rgba(0, 255, 140, 0.25);
+.badge-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 255, 140, 0.15);
+}
+
+.badge-container:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 15px rgba(0, 255, 140, 0.6));
 }
 
 

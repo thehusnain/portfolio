@@ -1,15 +1,7 @@
 // Boot Screen Animation
 document.addEventListener('DOMContentLoaded', () => {
     const bootScreen = document.getElementById('bootScreen');
-    
-    // Hide boot screen after animation completes
-    setTimeout(() => {
-        bootScreen.classList.add('fade-out');
-        setTimeout(() => {
-            bootScreen.style.display = 'none';
-        }, 500);
-    }, 6000); // 6 seconds total boot time
-    
+
     // Allow skipping with any key press or click
     const skipBoot = () => {
         bootScreen.classList.add('fade-out');
@@ -17,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bootScreen.style.display = 'none';
         }, 500);
     };
-    
+
     document.addEventListener('keydown', skipBoot, { once: true });
     bootScreen.addEventListener('click', skipBoot, { once: true });
 });
@@ -62,15 +54,15 @@ document.querySelectorAll('.skill-category').forEach(category => {
     skillObserver.observe(category);
 });
 
-function toggleMenu() {
+window.toggleMenu = function () {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
-}
+};
 
-function closeMenu() {
+window.closeMenu = function () {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.remove('active');
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -141,19 +133,19 @@ function closeCertificateImage() {
 }
 
 // Close image modal with Escape key or click outside
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeCertificateImage();
         closeCertificate();
     }
 });
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     const imageModal = document.querySelector('.cert-image-modal');
     if (imageModal && event.target === imageModal) {
         closeCertificateImage();
     }
-    
+
     const certModal = document.getElementById('certificateModal');
     if (certModal && event.target === certModal) {
         closeCertificate();
@@ -164,9 +156,9 @@ document.addEventListener('click', function(event) {
 function openCertificate(type) {
     const modal = document.getElementById('certificateModal');
     const certificateView = document.getElementById('certificateView');
-    
+
     let certificateHTML = '';
-    
+
     if (type === 'ctiga') {
         certificateHTML = `
             <div class="certificate-preview">
@@ -224,7 +216,7 @@ function openCertificate(type) {
             </div>
         `;
     }
-    
+
     certificateView.innerHTML = certificateHTML;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
